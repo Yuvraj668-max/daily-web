@@ -47,4 +47,4 @@ let citylist = [];
 for (let y = 0; y < cities.length; y++) {
   citylist.push(cities[y]);
 }
-console.log(citylist);
+// console.log(citylist);
