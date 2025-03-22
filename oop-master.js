@@ -62,3 +62,38 @@ class wheels extends Vehicle {
 }
 let tata = new wheels("tata", "curv");
 // console.log(tata.display());
+
+class BankAccount {
+  #balance = 0;
+
+  deposit(amount) {
+    this.#balance += amount;
+    return this.#balance;
+  }
+}
+let acc1 = new BankAccount();
+// console.log(acc1.deposit(100));
+
+class bird {
+  fly() {
+    return `flying...`;
+  }
+}
+
+class kiwi extends bird {
+  fly() {
+    return `cant fly`;
+  }
+}
+let kiwi1 = new kiwi();
+// console.log(kiwi1.fly());
+
+// static method
+class calculator {
+  static add(a, b) {
+    return a + b;
+  }
+}
+
+// console.log(calculator.add(2,4));
+
