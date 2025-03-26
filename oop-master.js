@@ -96,4 +96,15 @@ class calculator {
 }
 
 // console.log(calculator.add(2,4));
+function Animal() {}
+Animal.prototype.speak = function () {
+  return `Animal speaking`;
+};
+
+function Dog() {}
+Dog.prototype.bark = function () {
+  return `Woof!`;
+};
+Dog.prototype.Animal;
+console.log(Dog.speak());
 
