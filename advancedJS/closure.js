@@ -9,4 +9,4 @@ let inc = outer();
 
 console.log(inc());
 console.log(inc());
-console.log(inc());
+// console.log(inc());
