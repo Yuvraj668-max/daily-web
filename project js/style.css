@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  background-color: rgb(64, 64, 64);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#todo-input {
+  padding: 5px;
+  border-radius: 4px;
+  border: dashed 1px green;
+  background-color: rgb(160, 160, 160);
+}
+#add-task-button {
+  background-color: rgb(5, 70, 168);
+  padding: 4px;
+  margin: 3px;
+  border-radius: 15%;
+  border: dashed 1px black;
+}
+
+#add-task-button:hover {
+  background-color: rgb(2, 143, 2);
+  transition: 0.2s;
+  border: solid 1.2px black;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+li {
+  background-color: aliceblue;
+  width: 100%;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.delete-task {
+  background-color: rgb(255, 0, 0);
+  padding: 3px;
+  margin: 2px;
+  border-radius: 3px;
+}
+.delete-task:hover {
+  background-color: rgb(151, 4, 4);
+  transition: 0.2s;
+}
+.input-box {
+    display: flex;
+    
+}
