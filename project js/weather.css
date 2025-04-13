@@ -13,7 +13,7 @@ body {
 .input-container {
   position: relative;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 30%;
   left: 50%;
   width: 270px;
   background-color: rgb(80, 135, 183);
@@ -25,6 +25,11 @@ body {
   border-radius: 4px;
   color: black;
   padding: 3px;
+  transition-duration: 0.3s;
+}
+#get-weather-btn:hover {
+  background-color: rgb(3, 189, 189);
+  border: 2px solid black;
 }
 #city-input {
   background-color: white;
@@ -38,6 +43,15 @@ body {
     rgb(255, 141, 242)
   );
   color: black;
+  transition-duration: 0.5s;
+}
+#city-input:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(251, 85, 232),
+    rgb(79, 79, 246)
+  );
+  /* background-color: aqua; */
 }
 .hidden {
   display: none;
@@ -47,7 +61,7 @@ body {
 }
 #weather-info {
   position: relative;
-  top: 45%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, 0);
   width: 300px;
@@ -64,9 +78,32 @@ body {
   justify-content: center;
   flex-direction: column; */
 }
-.centralise{
+.centralise {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+#logo {
+  margin: 5px;
+  border: 2px solid black;
+  max-width: fit-content;
+  padding: 10px;
+  border-radius: 6px;
+  /* background-image: linear-gradient(rgb(255, 0, 0), blue); */
+}
+img {
+  /* margin-top: 20px;
+  margin-left: 50px; */
+  margin-left: 30px;
+
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+h3 {
+  /* margin-top: 0px;
+  margin-left: 20px; */
+  color: blueviolet;
+  text-decoration: underline;
 }
