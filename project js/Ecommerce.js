@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { id: 2, name: "product 2", price: 30 },
     { id: 3, name: "product 3", price: 50 },
   ];
+  let i = 1;
 
   const cart = [];
   const productList = document.getElementById("product-list");
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCart();
   }
   function renderCart() {
+    i = 1;
     cartItems.innerHTML = "";
     let totalPrice = 0;
     if (cart.length > 0) {
@@ -44,9 +46,21 @@ document.addEventListener("DOMContentLoaded", () => {
       cart.forEach((item, index) => {
         totalPrice += item.price;
         const cartItem = document.createElement("div");
+
+        cartItem.setAttribute("data-id", i);
+        i++;
+        const deleteBtn = document.createElement("button");
+        // deleteBtn.setAttribute("data-id", i);
+        deleteBtn.innerHTML = `Remove Product`;
         cartItem.innerHTML = `${item.name} - $${item.price.toFixed(2)}`;
+        cartItem.appendChild(deleteBtn);
         cartItems.appendChild(cartItem);
         totalPriceDisplay.textContent = `$${totalPrice.toFixed(2)}`;
+
+        deleteBtn.addEventListener("click", (e) => {
+          e.target.parentElement.remove();
+          console.log(cart);
+        });
       });
     } else {
       emptyCartMessage.classList.remove("hidden");
