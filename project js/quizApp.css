@@ -6,11 +6,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(./logos/KAUN_BANEGA_CROREPATI_SEASON_11.jpg);
-  background-size: auto 720px;
+  /* background-image: url(./logos/KAUN_BANEGA_CROREPATI_SEASON_11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: auto 720px; */
 }
 .container {
-  background-image: linear-gradient(rgb(254, 254, 254), rgb(2, 2, 137));
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(rgba(254, 254, 254, 0.7), rgba(2, 2, 137, 0.7));
 
   padding: 20px;
   border-radius: 10%;
@@ -88,4 +93,16 @@ li:hover {
   background-image: linear-gradient(45deg, rgb(255, 255, 255), blue);
   padding: 3px;
   border-radius: 5px;
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url(./logos/KAUN_BANEGA_CROREPATI_SEASON_11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: auto 720px;
+  z-index: 0;
+  opacity: 0.9;
 }
