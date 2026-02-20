@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-image: url(./logos/KAUN_BANEGA_CROREPATI_SEASON_11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: auto 720px; */
+}
+.container {
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(rgba(254, 254, 254, 0.7), rgba(2, 2, 137, 0.7));
+
+  padding: 20px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  background-image: linear-gradient(45deg, rgb(254, 254, 254), blue);
+  border-radius: 5%;
+  padding: 5px;
+}
+button {
+  background-image: linear-gradient(45deg, blue, white);
+  border-radius: 10%;
+  min-width: 90px;
+  padding: 3px;
+  transition: background 1s ease-in-out;
+}
+button:hover {
+  background-image: linear-gradient(135deg, white, blue);
+}
+.hidden {
+  display: none;
+}
+h2 {
+  background-image: linear-gradient(45deg, rgb(255, 255, 255), violet);
+  padding: 5px;
+  border-radius: 10%;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 3px;
+  /* background-color: aliceblue; */
+  min-width: 300px;
+  text-align: center;
+  border-radius: 3px;
+  background-image: linear-gradient(45deg, rgb(0, 255, 123), white);
+  transition-duration: 400ms;
+}
+li:hover {
+  background-image: linear-gradient(45deg, white);
+}
+.selectedLi {
+  background-image: linear-gradient(45deg, white);
+}
+#question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* #result-conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.css {
+  background-image: linear-gradient(45deg, rgb(255, 255, 255), blue);
+  padding: 3px;
+  border-radius: 5px;
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url(./logos/KAUN_BANEGA_CROREPATI_SEASON_11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: auto 720px;
+  z-index: 0;
+  opacity: 0.9;
+}
