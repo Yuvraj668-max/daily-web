@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  height: 100vh;
+  background-color: rgb(67, 67, 67);
+  background: url("./logos/weather-climate-vocabulary-with-cute-cartoon-characters-kids_535862-1422.avif");
+  background-size: 100vh;
+}
+.input-container {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  width: 270px;
+  background-color: rgb(80, 135, 183);
+  padding: 30px;
+  border-radius: 5px;
+}
+#get-weather-btn {
+  background-color: aqua;
+  border-radius: 4px;
+  color: black;
+  padding: 3px;
+  transition-duration: 0.3s;
+}
+#get-weather-btn:hover {
+  background-color: rgb(3, 189, 189);
+  border: 2px solid black;
+}
+#city-input {
+  background-color: white;
+  border-radius: 4px;
+  padding: 3px;
+  border: 1px solid blue;
+  box-shadow: 4px 0px 15px blue;
+  background-image: linear-gradient(
+    to right,
+    rgb(137, 137, 246),
+    rgb(255, 141, 242)
+  );
+  color: black;
+  transition-duration: 0.5s;
+}
+#city-input:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(251, 85, 232),
+    rgb(79, 79, 246)
+  );
+  /* background-color: aqua; */
+}
+.hidden {
+  display: none;
+}
+#error-message {
+  color: red;
+}
+#weather-info {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 300px;
+
+  background-color: rgb(0, 240, 240);
+
+  border: 2px solid black;
+  /* margin: 20px; */
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+.centralise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#logo {
+  margin: 5px;
+  border: 2px solid black;
+  max-width: fit-content;
+  padding: 10px;
+  border-radius: 6px;
+  /* background-image: linear-gradient(rgb(255, 0, 0), blue); */
+}
+img {
+  /* margin-top: 20px;
+  margin-left: 50px; */
+  margin-left: 30px;
+
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+h3 {
+  /* margin-top: 0px;
+  margin-left: 20px; */
+  color: blueviolet;
+  text-decoration: underline;
+}
