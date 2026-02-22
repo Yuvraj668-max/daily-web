@@ -4,59 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login page</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #1a1a1a;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .card {
-        background-color: #a6a4a4;
-        border-radius: 8px;
-        padding: 30px;
-        width: 300px;
-      }
-      h2 {
-        color: blue;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      form {
-        display: flex;
-
-        flex-direction: column;
-        /* gap: 10px; */
-      }
-      input {
-        margin-bottom: 10px;
-        padding: 5px;
-        border-radius: 5px;
-        background-color: #8d8c8c;
-        border: 1px solid black;
-      }
-      button {
-        background-color: rgb(15, 78, 214);
-        color: white;
-        border-radius: 4px;
-      }
-      button:hover{
-        background-color: blue;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card">
-      <h2>Login Page</h2>
-      <form action="">
-        <input placeholder="email" type="email" />
-        <input type="password" placeholder="password" />
-        <button type="submit">Login</button>
-      </form>
+    <p id="header">this is the header</p>
+    <h1>main heading</h1>
+    <p>
+      this paragragph is adjacent to h1 and demonstrate the adjacent sibling
+      selector
+    </p>
+    <article>
+      <p>this paragraph is inside an article</p>
+    </article>
+    <p class="highlight">this paragraph ha shighlight class</p>
+    <p>this is a regular paragrapgh showing type selector</p>
+    <input placeholder="enter text here" type="text" name="" id="" />
+    <h2>Sub heading</h2>
+    <p>
+      this is a sibling paragraph to h2,demontrating the general sibling
+      selector
+    </p>
+
+    <a href="#">hover over me to see the pseudo-class slector in action</a>
+    <p>
+      this paragraph dmonstrate pseudo-element selector with a styled first line
+      and first letter
+    </p>
+
+    <h3>heading</h3>
+    <p>
+      the heading h1 ,h2 and h3 use the grouping slectors for consistent font
+      family.
+    </p>
+    <div>
+      <p>i am a child</p>
+      <p>i am a child</p>
+      <section>
+        <p>i am a descendent</p>
+      </section>
+      <p>paragrapgh 4 in the div</p>
     </div>
   </body>
 </html>
